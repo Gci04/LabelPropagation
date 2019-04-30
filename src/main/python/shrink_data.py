@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 edges = pd.read_csv("wiki-topcats.txt",sep=" ",names=["src","dst"])
 
@@ -11,4 +12,4 @@ while True:
     if n_vertices >= min_vertices:
         break
 
-newdf.to_csv("wiki-topcats.csv",header = None,sep = ",",index=False)
+newdf.to_csv("wiki-topcats.csv",header = None,sep = " ",index=False)
